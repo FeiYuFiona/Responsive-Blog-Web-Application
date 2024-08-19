@@ -1,0 +1,135 @@
+.loginForm, .signUpForm {
+    margin: 0 auto;
+    max-width: 500px;
+    width: 500px;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+.postBlog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    border: none;
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+}
+
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1500px;
+    padding: 20px;
+    border: LightSalmon solid;
+    box-sizing: border-box;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+}
+
+.posts-container .post {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 100%;
+    max-width: 1500px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.posts-container .post h2 {
+    text-align: center;
+    margin: 0 0 10px 0;
+}
+
+.posts-container .post p {
+    font-size: large;
+}
+
+.posts-container .post small {
+    display: block;
+    margin-top: 10px;
+}
+
+.my-input { 
+    margin-bottom: 10px; 
+    min-height: 50px;
+    font-size: larger;
+    width: 1500px;
+}
+
+.my-textarea {
+
+    min-height: 300px; 
+    box-sizing: border-box; 
+    padding: 10px; 
+    font-size: large;
+    width: 1500px;
+}
+
+.submitLogin, .submitSignUp, .publish {
+    color: white;
+    border-radius: 10px;
+    border: solid #f1f1f1;
+    background-color: LightSalmon;
+    font-size: 20px;
+    padding: 5px 10px;
+  }
+
+.submitLogin:hover, .submitSignUp:hover, .publish:hover {
+    background-color: rgb(255, 173, 141);
+  }
+
+input {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.about {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 500px) {
+    .loginForm, .signUpForm, .about, .publish {
+    max-width: unset;
+    width: auto;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .my-input, .my-textarea {
+        padding: 10px; /* Padding inside input and textarea */
+        width: 50%; /* Set to 50% of the parent container's width */
+        max-width: 600px; /* Optional: Set a maximum width */
+        box-sizing: border-box; /* Include padding in the width/height calculations */
+        margin: 0 auto; 
+    }
+
+    .posts-container {
+        padding: 10px; 
+        max-width: 100%; 
+    }
+}
+

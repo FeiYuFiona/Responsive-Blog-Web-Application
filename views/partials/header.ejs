@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/contents.css">
+</head>
+<body>
+<header>
+    <nav class="header">
+        <a class="logo">Sharing & Telling</a>
+        <div class="header-right">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <% if (user) { %>
+                <a>Hello, <%= user.username %></a>
+                <a href="/logout">Logout</a>
+            <% } else { %>
+                <a href="/login">Login</a>
+                <a href="/signUp">Sign Up</a>
+                <% if (messages.success) { %>
+                    <script>alert("<%= messages.success %>")</script>>
+                <% } %>
+                <% if (messages.error) { %>
+                    <script>alert("<%= messages.error %>")</script>
+                <% } %>
+            <% } %>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+
+<form id="signUpForm" action="/signUp" method="post" class="signUpForm">
+    <div><label for="username">Enter your username: </label></div>
+      <input type="text" name="username" id="username" required />
+    
+    <div><label for="password">Enter your password: </label></div>
+      <input type="password" name="password" id="password" required />
+    
+    <div><label for="confirmPassword">Confirm your password: </label></div>
+      <input type="password" name="confirmPassword" id="confirmPassword" required />
+
+    <div><input class="submitSignUp" type="submit" value="submit" /></div>   
+    <div id="errorMessage"></div>
+  </form>
+
+  <script>
+     document.getElementById("signUpForm").addEventListener("submit", function(event) {
+    const password = document.getElementById("password").value;
+    const confirmPassword = document.getElementById("confirmPassword").value;
+    
+    if (password !== confirmPassword) {
+      event.preventDefault();
+      document.getElementById("errorMessage").innerText = "Passwords do not match.";
+    }
+  });
+  </script>
+
+<%- include("partials/footer.ejs") %>

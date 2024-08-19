@@ -1,0 +1,26 @@
+{
+  "name": "blogwebapplication",
+  "version": "1.0.0",
+  "description": "Create a blog web application using node.js, Express.js, and EJS",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Web",
+    "development",
+    "node.js",
+    "Express.js",
+    "EJS"
+  ],
+  "author": "Fei Yu",
+  "license": "ISC",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "connect-flash": "^0.1.1",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0"
+  }
+}
